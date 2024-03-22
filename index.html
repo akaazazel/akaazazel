@@ -1,53 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aka.azazel</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: poppins;
+        color: white;
+        user-select: none;
+        transition: 0.25s;
+    }
 
-  <link rel="stylesheet" href="styles/google-new.css">
-  <link rel="stylesheet" href="styles/google-responsive.css">
+    :root{
+        --border-radius: 20px
+    }
+
+    body{
+        background-color: rgb(32, 32, 32);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container{
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-position: center;
+        overlay: ;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: var(--border-radius);
+        width: 60%;
+        height: 70%;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #ffffff27, #000000c3);
+        border-radius: var(--border-radius)
+    }
+
+    .info{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0 0 30px 40px;
+    }
+
+    .description{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .name{
+        font-size: 48px;
+    }
+
+    .link-list{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        /*background-color: grey;*/
+        padding: 0 40px 40px 0;
+    }
+
+    .links{
+        background-color: rgba(132, 132, 132, 0.537);
+        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+    .links:hover{
+        background-color: rgba(170, 170, 170, 0.775);
+        transform: scale(1.1);
+    }
+
+    .links img{
+        width: 20px;
+        filter: invert();
+    }
+
+    @media (max-width: 1000px){
+        .info{
+            bottom: 60px;
+        }
+
+        .link-list{
+            left: 0;
+            padding: 0 0 40px 40px;
+        }
+    }
+
+    @media (max-width: 480px){
+        .description{
+            font-size: 12px;
+        }
+        
+        .name{
+            font-size: 38px;
+        }
+
+        .link-list{
+            width: 200px;
+        }
+
+        .links{
+            width: 35px;
+            height: 35px;
+        }
+
+        .links img{
+            width: 15px;
+        }
+    }
+    </style>
 </head>
 <body>
-  <div class="content">
-    <div class="left-side">
-      <img class="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png">
-      <p class="left-p-one">Sign In</p>
-      <p class="left-p-two">Use your Google Account</p>
-    </div>
+    <div class="container">
+        <div class="overlay"></div>
 
-    <div class="right-side">
-      <div class="top-part">
-        <div class="email-forgot-email">
-          <input class="email-input" type="text" placeholder="Email or phone">
+        <div class="info">
+            <p class="description">I draw with pencil</p>
+            <h1 class="name">Azazel</h1>
         </div>
-        <p class="forget-email"><a href="#">Forget email?</a></p>
-        <p class="right-p-one">
-          Not your computer? Use Guest mode to sign in privately.
-          <a href="#">Learn More</a></p>
-      </div>
-      <div class="buttons">
-        <a href="#">Create account</a>
-        <button class="next-button" onclick="emailSave()"><a href="password.html">Next</a></button>
-      </div>
-      </p>
-    </div>
-  </div>
 
-  <div class="footer">
-    <p class="lang">English (United States)</p>
-    <div class="help">
-      <ul>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
+        <div class="link-list">
+
+            <div class="links">
+                <img src="icons/instagram.png">
+            </div>
+            <div class="links">
+                <img src="icons/twitterx.png">
+            </div>
+            <div class="links">
+                <img src="icons/spotify.png">
+            </div>
+            <div class="links">
+                <img src="icons/youtube.png">
+            </div>
+            <div class="links">
+                <img src="icons/mail.png">
+            </div>
+        </div>
+
     </div>
-  </div>
-  <script src="javascript/google.js"></script>
 </body>
 </html>
