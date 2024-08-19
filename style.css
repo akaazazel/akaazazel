@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: montserrat;
+  font-family: "JetBrains Mono", monospace;
 }
 
 ::selection {
@@ -31,6 +31,7 @@ body {
   width: 360px;
   margin: auto;
   background-color: var(--off-white);
+  font-size: 14px;
 }
 
 header {
