@@ -1,169 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aka.azazel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <style>
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: poppins;
-        color: white;
-        user-select: none;
-        transition: 0.25s;
-    }
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flux-align">
+      <h1>aka.azazel</h1>
+      <nav>
+        <ul class="flux-align">
+          <a href=""><li>gallery</li></a>
+          <a href=""><li>social</li></a>
+          <a href=""><li>contact</li></a>
+        </ul>
+      </nav>
+    </header>
 
-    :root{
-        --border-radius: 20px
-    }
-
-    body{
-        background-color: rgb(32, 32, 32);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    .container{
-        background-image: url(background.jpg);
-        background-size: cover;
-        background-position: center;
-        overlay: ;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: var(--border-radius);
-        width: 60%;
-        height: 70%;
-    }
-
-    .overlay{
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom, #ffffff27, #000000c3);
-        border-radius: var(--border-radius)
-    }
-
-    .info{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 0 0 30px 40px;
-    }
-
-    .description{
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 14px;
-        color: grey;
-        font-weight: bold;
-    }
-
-    .name{
-        font-size: 48px;
-    }
-
-    .link-list{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        display: flex;
-        justify-content: space-between;
-        width: 250px;
-        /*background-color: grey;*/
-        padding: 0 40px 40px 0;
-    }
-
-    .links{
-        background-color: rgba(132, 132, 132, 0.537);
-        border-radius: 25px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.25s;
-        cursor: pointer;
-    }
-
-    .links:hover{
-        background-color: rgba(170, 170, 170, 0.775);
-        transform: scale(1.1);
-    }
-
-    .links img{
-        width: 20px;
-        filter: invert();
-    }
-
-    @media (max-width: 1000px){
-        .info{
-            bottom: 60px;
-        }
-
-        .link-list{
-            left: 0;
-            padding: 0 0 40px 40px;
-        }
-    }
-
-    @media (max-width: 480px){
-        .description{
-            font-size: 12px;
-        }
-        
-        .name{
-            font-size: 38px;
-        }
-
-        .link-list{
-            width: 200px;
-        }
-
-        .links{
-            width: 35px;
-            height: 35px;
-        }
-
-        .links img{
-            width: 15px;
-        }
-    }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="overlay"></div>
-
-        <div class="info">
-            <p class="description">I draw with pencil</p>
-            <h1 class="name">Azazel</h1>
+    <section class="gallery">
+      <p>i dro this</p>
+      <div class="gallery-wrapper">
+        <div class="g-image g-image01">
+          <img src="resources\drawing01.jpg" alt="" />
         </div>
-
-        <div class="link-list">
-
-            <div class="links">
-                <img src="icons/instagram.png">
-            </div>
-            <div class="links">
-                <img src="icons/twitterx.png">
-            </div>
-            <div class="links">
-                <img src="icons/spotify.png">
-            </div>
-            <div class="links">
-                <img src="icons/youtube.png">
-            </div>
-            <div class="links">
-                <img src="icons/mail.png">
-            </div>
+        <div class="g-image g-image02">
+          <img src="resources\drawing02.jpg" alt="" />
         </div>
+        <div class="g-image g-image03">
+          <img src="resources\drawing03.jpg" alt="" />
+        </div>
+        <div class="g-image g-image04">
+          <img src="resources\drawing04.jpg" alt="" />
+        </div>
+        <div class="g-image g-image05">
+          <img src="resources\drawing05.jpg" alt="" />
+        </div>
+        <div class="g-image g-image05">
+          <a href="https://www.instagram.com/aka.azazel/"
+            ><button>see more?</button></a
+          >
+        </div>
+      </div>
+    </section>
 
-    </div>
-</body>
+    <section class="about">
+      <p class="about-para">
+        n i code in <br />
+        <span class="lang-list python"> python </span>
+        <span class="lang-list c"> c </span>
+        <span class="lang-list html"> html </span>
+        <span class="lang-list css"> css</span><br />
+        don't have any projects to show off... yet<br />
+        but hey, i made this website!
+      </p>
+    </section>
+
+    <section class="contact">
+      <p class="section-heading">contact me</p>
+      <div class="message-box">
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="why would you contact me???"
+        />
+        <button onclick="openGmail()">submit</button>
+      </div>
+    </section>
+
+    <section class="social">
+      <p class="section-heading">
+        you can follow me here <br />
+        <span>ps: i only use instagram</span>
+      </p>
+      <div class="links">
+        <a href="https://www.instagram.com/aka.azazel/"
+          ><button>instagram</button></a
+        >
+        <a href="https://x.com/akaazazel"><button>x</button></a>
+        <a href="https://github.com/akaazazel"><button>github</button></a>
+        <a href="https://www.linkedin.com/in/cvakshay/"
+          ><button>linkedin</button></a
+        >
+      </div>
+      <p class="footer-text">footer looks really bad</p>
+    </section>
+  </body>
 </html>
