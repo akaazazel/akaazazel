@@ -43,7 +43,7 @@ body {
 }
 
 input {
-  color: var(--grey-color);
+  color: var(--text-color);
   background-color: var(--background-color);
   border: 1px solid var(--text-color);
 }
