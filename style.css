@@ -8,13 +8,13 @@
 
 ::selection {
   color: white;
-  background-color: rgb(108, 92, 61);
+  background-color: #0b95d0;
 }
 
 :root {
-  --off-white: rgb(239, 239, 239);
-  --off-black: rgb(19, 19, 19);
-  --grey-color: rgb(169, 169, 169);
+  --background-color: rgb(239, 239, 239);
+  --text-color: rgb(19, 19, 19);
+  --grey-color: rgb(165, 165, 165);
 }
 
 .flux-align {
@@ -23,16 +23,43 @@
   justify-content: space-between;
 }
 
-button {
-  user-select: none;
+/* Here goes the dark mode */
+.grey-text {
+  color: var(--grey-color);
+}
+
+body.dark-mode {
+  --background-color: rgb(21, 21, 21);
+  --text-color: rgb(239, 239, 239);
+  --grey-color: rgb(67, 67, 67);
 }
 
 body {
   width: 360px;
   margin: auto;
-  background-color: var(--off-white);
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-size: 14px;
 }
+
+input {
+  color: var(--grey-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+}
+
+button {
+  user-select: none;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background-color: var(--background-color);
+
+  &:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+  }
+}
+/*-------------------------*/
 
 header {
   width: 100%;
@@ -53,28 +80,33 @@ header ul li {
   padding-left: 10px;
 }
 
+#darkModeToggle {
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
 .gallery-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, calc((360px - 10px) / 3));
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .g-image {
-  width: calc((360px - 10px) / 3);
+  width: calc((360px - 10px) / 3px);
   height: calc((360px - 10px) / 3);
   cursor: pointer;
   user-select: none;
   border: 1px solid;
-}
 
-.g-image:hover {
-  opacity: 0.8;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .g-image button {
   font-weight: 600;
-  color: rgb(102, 90, 74);
+  color: rgb(81, 72, 60);
   width: 100%;
   height: 100%;
   border: none;
@@ -121,7 +153,7 @@ header ul li {
 .contact {
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid var(--off-black);
+  border-bottom: 1px solid var(--background-color);
 }
 
 .message-box {
@@ -135,27 +167,19 @@ header ul li {
 
 .message-box input {
   padding-left: 10px;
-  border: 1px solid var(--off-black);
   font-size: 12px;
 }
 
 .message-box button {
-  border: 1px solid var(--off-black);
   cursor: pointer;
-}
 
-.message-box button:hover {
-  color: var(--off-white);
-  background-color: var(--off-black);
-}
-
-.message-box button:active {
-  opacity: 0.8;
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .social p span {
   font-size: 12px;
-  color: rgb(150, 150, 150);
 }
 
 .links {
@@ -168,22 +192,15 @@ header ul li {
 .links button {
   width: 100%;
   height: 30px;
-  border: 1px solid var(--off-black);
   cursor: pointer;
-}
 
-.links button:hover {
-  color: var(--off-white);
-  background-color: var(--off-black);
-}
-
-.links button:active {
-  opacity: 0.8;
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .footer-text {
   font-size: 12px;
-  color: var(--grey-color);
   text-align: center;
 }
 
