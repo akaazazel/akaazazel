@@ -3,7 +3,8 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono", monospace, montserrat;
+  transition: 0.15s;
 }
 
 ::selection {
@@ -15,15 +16,16 @@
   --background-color: rgb(239, 239, 239);
   --text-color: rgb(19, 19, 19);
   --grey-color: rgb(165, 165, 165);
+  --accent-color: rgb(32, 214, 32);
 }
 
+/* Here goes the global things */
 .flux-align {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Here goes the dark mode */
 .grey-text {
   color: var(--grey-color);
 }
@@ -40,6 +42,14 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: 14px;
+}
+
+a {
+  color: var(--text-color);
+}
+
+p {
+  line-height: 1.5;
 }
 
 input {
@@ -81,7 +91,7 @@ header ul li {
 }
 
 #darkModeToggle {
-  padding: 4px 6px;
+  padding: 4px 5px;
   cursor: pointer;
 }
 
@@ -151,8 +161,7 @@ header ul li {
 }
 
 .contact {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 18px;
   border-bottom: 1px solid var(--background-color);
 }
 
