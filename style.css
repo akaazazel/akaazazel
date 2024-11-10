@@ -7,16 +7,16 @@
   transition: 0.15s;
 }
 
-::selection {
-  color: white;
-  background-color: #0b95d0;
-}
-
 :root {
   --background-color: rgb(239, 239, 239);
   --text-color: rgb(19, 19, 19);
   --grey-color: rgb(165, 165, 165);
   --accent-color: rgb(32, 214, 32);
+}
+
+::selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
 }
 
 /* Here goes the global things */
