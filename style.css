@@ -192,10 +192,19 @@ header ul li {
 }
 
 .links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   padding: 10px 0;
+}
+
+.row1 {
   gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.row2 {
+  padding-top: 5px;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .links button {
