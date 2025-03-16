@@ -165,26 +165,10 @@ header ul li {
   border-bottom: 1px solid var(--background-color);
 }
 
-.message-box {
+.contact button {
+  margin-top: 5px;
   width: 100%;
   height: 30px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 5px;
-  padding-top: 10px;
-}
-
-.message-box input {
-  padding-left: 10px;
-  font-size: 12px;
-}
-
-.message-box button {
-  cursor: pointer;
-
-  &:active {
-    opacity: 0.8;
-  }
 }
 
 .social p span {
@@ -193,6 +177,8 @@ header ul li {
 
 .links {
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .row1 {
