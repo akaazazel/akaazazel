@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aka.azazel</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>akaazazel</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="flux-align">
-      <a href="index.html"><h1>aka.azazel</h1></a>
-      <nav>
-        <ul class="flux-align">
-          <a href=""><li>gallery</li></a>
-          <a href=""><li>social</li></a>
-          <a href=""><li>contact</li></a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="flux-align">
+    <a href="index.html">
+      <h1>akaazazel</h1>
+    </a>
+    <nav>
+      <ul class="flux-align">
+        <a href="">
+          <li>gallery</li>
+        </a>
+        <a href="">
+          <li>social</li>
+        </a>
+        <a href="">
+          <li>contact</li>
+        </a>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">dark mode</button>
+  </header>
+
+  <section class="gallery">
+    <p>akshay. cse undergrad. i dro</p>
+    <div class="gallery-wrapper">
+      <div class="g-image g-image01">
+        <img src="resources\drawing01.jpg" alt="" />
+      </div>
+      <div class="g-image g-image02">
+        <img src="resources\drawing02.jpg" alt="" />
+      </div>
+      <div class="g-image g-image03">
+        <img src="resources\drawing03.jpg" alt="" />
+      </div>
+      <div class="g-image g-image04">
+        <img src="resources\drawing04.jpg" alt="" />
+      </div>
+      <div class="g-image g-image05">
+        <img src="resources\drawing05.jpg" alt="" />
+      </div>
+      <div class="g-image g-image05">
+        <a href="https://www.instagram.com/akaazazel/"><button>see more?</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <p class="about-para">
+      and i code<br />
+      <span class="lang-list python"> python </span>
+      <span class="lang-list js"> js </span>
+      <span class="lang-list html"> html </span>
+      <span class="lang-list css"> css</span>
+      <br />
+      and i know<br />
+      <span class="lang-list fastapi"> fastapi </span>
+      <span class="lang-list react"> react </span>
+      <span class="lang-list figma"> figma </span>
+      <span class="lang-list mongodb"> mongodb </span>
+      <br />
+    </p>
+    <p class="projects-heading">projects</p>
+    <ul class="projects-list">
+      <a href="https://makemelookbad.onrender.com/">
+        <li class="project makemelookbad">makemelookbad
+          <ul class="tags">
+            <li>personal</li>
+            <li>fastapi</li>
+            <li>react</li>
+          </ul>
+        </li>
+      </a>
+      <li class="project rescuelink">rescuelink
+        <ul class="tags">
+          <li>ieee</li>
+          <li>icfoss</li>
+          <li>backend</li>
         </ul>
-      </nav>
-      <button id="darkModeToggle">dark mode</button>
-    </header>
+      </li>
+    </ul>
+    <p class="project-end-text">working on more projects</p>
+  </section>
 
-    <section class="gallery">
-      <p>i akshay. i dro this</p>
-      <div class="gallery-wrapper">
-        <div class="g-image g-image01">
-          <img src="resources\drawing01.jpg" alt="" />
-        </div>
-        <div class="g-image g-image02">
-          <img src="resources\drawing02.jpg" alt="" />
-        </div>
-        <div class="g-image g-image03">
-          <img src="resources\drawing05.jpg" alt="" />
-        </div>
-        <div class="g-image g-image04">
-          <img src="resources\drawing03.jpg" alt="" />
-        </div>
-        <div class="g-image g-image05">
-          <img src="resources\drawing04.jpg" alt="" />
-        </div>
-        <div class="g-image g-image05">
-          <a href="https://www.instagram.com/aka.azazel/"
-            ><button>see more?</button></a
-          >
-        </div>
+  <section class="contact">
+    <p class="section-heading">if you want to contact me</p>
+    <button onclick="openGmail()">email me</button>
+  </section>
+
+  <section class="social">
+    <p class="section-heading">
+      you can follow me here <br />
+      <span class="grey-text">ps: i only use instagram</span>
+    </p>
+    <div class="links">
+      <div class="row1">
+        <a href="https://www.instagram.com/akaazazel/"><button>instagram</button></a>
+        <a href="https://github.com/akaazazel"><button>github</button></a>
       </div>
-    </section>
-
-    <section class="about">
-      <p class="about-para">
-        and i code.<br />in
-        <span class="lang-list python"> python </span>
-        <span class="lang-list c"> c </span>
-        <span class="lang-list html"> html </span>
-        <span class="lang-list css"> css</span><br />
-        i don't have any projects to show off... yet. but hey, i made this
-        website!
-      </p>
-    </section>
-
-    <section class="contact">
-      <p class="section-heading">if you want to contact me</p>
-      <button onclick="openGmail()">email me</button>
-    </section>
-
-    <section class="social">
-      <p class="section-heading">
-        you can follow me here <br />
-        <span class="grey-text">ps: i only use instagram</span>
-      </p>
-      <div class="links">
-        <div class="row1">
-          <a href="https://www.instagram.com/aka.azazel/"
-            ><button>instagram</button></a
-          >
-          <a href="https://github.com/akaazazel"><button>github</button></a>
-        </div>
-        <div class="row2">
-          <a href="https://pin.it/26wuN2I6R"><button>pinterest</button></a>
-          <a href="https://x.com/akaazazel"><button>x</button></a>
-          <a href="https://www.linkedin.com/in/cvakshay/"
-            ><button>linkedin</button></a
-          >
-        </div>
+      <div class="row2">
+        <a href="https://pin.it/26wuN2I6R"><button>pinterest</button></a>
+        <a href="https://x.com/akaazazel"><button>x</button></a>
+        <a href="https://www.linkedin.com/in/cvakshay/"><button>linkedin</button></a>
       </div>
-      <p class="footer-text grey-text">boring website</p>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <p class="footer-text grey-text">boring website</p>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>
