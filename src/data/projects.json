@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Comic Saver",
+    "description": "CLI tool to scrape and download high-quality comics from ReadComicOnline.li",
+    "link": "https://comicsaver.vercel.app/",
+    "github": "https://github.com/akaazazel/comicsaver",
+    "image": "/comic_saver.png",
+    "tags": [
+      "CLI",
+      "Python",
+      "Scraping"
+    ]
+  },
+  {
+    "name": "Make Me Look Bad",
+    "description": "Fun chaotic interactive web experiment with memes and colors.",
+    "link": "https://makemelookbad.onrender.com/",
+    "github": "https://github.com/akaazazel/makemelookbad_v1",
+    "image": "/make_me_look_bad.png",
+    "tags": [
+      "React",
+      "FastAPI",
+      "AI"
+    ]
+  }
+]
