@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Mail, ArrowUpRight, Sun, Moon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import { FaLinkedin, FaGithub, FaImages } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoMail } from "react-icons/io5";
+import { GoHomeFill } from "react-icons/go";
 import profile from "./data/profile.json";
 import experience from "./data/experience.json";
 import projects from "./data/projects.json";
@@ -89,28 +93,42 @@ function App() {
                 <p className="header-tagline">{profile.tagline}</p>
 
                 <div className="social-links">
-                    <a href={`mailto:${profile.email}`} className="flex">
-                        Email
+                    <a href={`mailto:${profile.email}`} className="social-link-item" title="Email">
+                        <IoMail />
                     </a>
                     <a
                         href={profile.github}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex"
+                        className="social-link-item"
+                        title="GitHub"
                     >
-                        GitHub
+                        <FaGithub />
                     </a>
-                    <a href={profile.linkedin} className="flex">
-                        LinkedIn
+                    <a
+                        href={profile.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-link-item"
+                        title="LinkedIn"
+                    >
+                        <FaLinkedin />
                     </a>
-                    <a href={profile.instagram} className="flex">
-                        Instagram
+                    <a
+                        href={profile.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-link-item"
+                        title="Instagram"
+                    >
+                        <RiInstagramFill />
                     </a>
                     <button 
                         onClick={() => setViewMode(viewMode === 'home' ? 'gallery' : 'home')} 
-                        className="flex toggle-link-button"
+                        className="social-link-item toggle-link-button"
+                        title={viewMode === 'home' ? 'Gallery' : 'Home'}
                     >
-                        {viewMode === 'home' ? 'Gallery' : 'Home'}
+                        {viewMode === 'home' ? <FaImages /> : <GoHomeFill />}
                     </button>
                 </div>
             </header>
