@@ -132,13 +132,15 @@ function App() {
 
                     <section>
                         <h2>EXP</h2>
-                        <ul>
+                        <ul className="simple-cards">
                             {experience.map((job, index) => (
-                                <li key={index}>
-                                    <div className="item-title">
-                                        {job.title} - {job.company}
+                                <li key={index} className="simple-card">
+                                    <div className="simple-card-header">
+                                        <div className="item-title">
+                                            {job.title} - {job.company}
+                                        </div>
+                                        <div className="item-meta">{job.period}</div>
                                     </div>
-                                    <div className="item-meta">{job.period}</div>
                                     {job.description && (
                                         <div className="item-desc">
                                             {job.description}
@@ -151,12 +153,14 @@ function App() {
 
                     <section>
                         <h2>STUDI</h2>
-                        <ul>
+                        <ul className="simple-cards">
                             {education.map((edu, index) => (
-                                <li key={index}>
-                                    <div className="item-title">{edu.degree}</div>
+                                <li key={index} className="simple-card">
+                                    <div className="simple-card-header">
+                                        <div className="item-title">{edu.degree}</div>
+                                        <div className="item-meta">{edu.period}</div>
+                                    </div>
                                     <div className="item-desc">{edu.institution}</div>
-                                    <div className="item-meta">{edu.period}</div>
                                 </li>
                             ))}
                         </ul>
