@@ -4,7 +4,7 @@
     "description": "CLI tool to scrape and download high-quality comics from ReadComicOnline.li",
     "link": "https://comicsaver.vercel.app/",
     "github": "https://github.com/akaazazel/comicsaver",
-    "image": "/comic_saver.png",
+    "image": "/projects/comicsaver.png",
     "tags": [
       "CLI",
       "Python",
@@ -16,7 +16,7 @@
     "description": "Fun chaotic interactive web experiment with memes and colors.",
     "link": "https://makemelookbad.onrender.com/",
     "github": "https://github.com/akaazazel/makemelookbad_v1",
-    "image": "/make_me_look_bad.png",
+    "image": "/projects/makemelookbad.png",
     "tags": [
       "React",
       "FastAPI",
